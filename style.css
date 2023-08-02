@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+@media (max-width:600px) {
+    #form{
+        width: 80vw;
+    }
+}
+
+#form>form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(162, 162, 162);
+    border-radius: 10px;
+}
+.input{
+    width: 35vw;
+    font-size: 18px;
+    border: 2px solid transparent;
+    outline: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.input:focus{
+    border: 2px solid green;
+    transition: 0.2s ease-out;
+}
+#btn{
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.checkbox>label{
+    font-size: 18px;
+    color: #fff;
+}
+.checkbox{
+    margin: 10px 0px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#userErr, #phoneErr, #passErr{
+    margin-top: 5px;
+    font-size: 16px;
+    color: red;
+    font-weight: 400;
+}
